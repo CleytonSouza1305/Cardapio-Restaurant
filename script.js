@@ -196,6 +196,10 @@ function checkOpen() {
    const data = new Date()
    const hora = data.getHours()
 
+   cart.length = 0
+   addressInput.value = ''
+   updateCartModal()
+
    return hora >= 18 && hora < 22
 }
 
